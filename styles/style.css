@@ -235,7 +235,44 @@ footer hr{
 .social-media-link:hover{
     color: var(--primary-color);
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    Styles for upcoming page
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+.upcoming-match-wrapper{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 55px 30px;
+    text-align: center;
+}
+.team-flags{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flag{
+    height: 56px;
+}
+.team-names-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.team-name,.team-names-wrapper span{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.time{
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+    margin-top: 10px;
+}
 /* ====================
         Media quires 
 ======================= */
@@ -310,10 +347,11 @@ footer hr{
     .left-menu-link {
         border: 1px solid #E8E8E8;
     }
-    .matches-wrapper {  
+    .matches-wrapper {
         padding-left: 0;
         grid-template-columns: repeat(1 , 1fr);
         gap: 16px;
+        width: 100%;
     }
     /* footer */
     footer {
@@ -333,6 +371,16 @@ footer hr{
         color: #B9B9B9;
         padding: 10px 20px;
         display: block;
+    }
+
+    /* ++++++++++++++++++++++++++++++++++++++++
+    Upcoming match page 
+    +++++++++++++++++++++++++++++++*/
+    .upcoming-match-wrapper {
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+        padding: 30px 30px;
+        text-align: center;
     }
 }
 
@@ -400,10 +448,11 @@ footer hr{
         flex-grow: 1;
         margin: 0 22px;
     }
-    .matches-wrapper {  
+    .matches-wrapper {
         padding-left: 0;
         grid-template-columns: repeat(2 , 1fr);
         gap: 16px;
+        width: 100%;
     }
     .btn-for-tab-wrapper{
         display: flex;
@@ -435,3 +484,5 @@ footer hr{
         display: block;
     }
 }
+
+
