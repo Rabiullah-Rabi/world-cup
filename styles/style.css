@@ -343,6 +343,9 @@ footer hr{
         display: flex;
         flex-direction: column;
         position: static;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
     }
     .left-menu-link {
         border: 1px solid #E8E8E8;
@@ -445,8 +448,8 @@ footer hr{
     }    
     .left-menu-link {
         border: 1px solid #E8E8E8;
-        flex-grow: 1;
-        margin: 0 22px;
+        flex-grow: unset;
+        margin: 0;
     }
     .matches-wrapper {
         padding-left: 0;
